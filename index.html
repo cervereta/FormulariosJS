@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario de Registro</h2>
+        <form action="#" method="post" name="formulario" >
+
+            <!-- Nombre -->
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <!-- Apellidos -->
+            <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+
+            <!-- Usuario -->
+            <div class="form-group">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <!-- Repetir Password -->
+            <div class="form-group">
+                <label for="repetir_password">Repetir Contraseña:</label>
+                <input type="password" id="repetir_password" name="repetir_password" required>
+            </div>
+
+            <!-- Edad -->
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="0" max="90" required>
+            </div>
+
+            <!-- Telefono -->
+            <div class="form-group">
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Provincia -->
+            <div class="form-group">
+                <label for="provincia">Provincia:</label>
+                <select id="provincia" name="provincia" required>
+                    <option value="">Selecciona una Provincia</option>
+                    <option value="castello">Castelló</option>
+                    <option value="valencia">Valencia</option>
+                    <option value="alicante">Alicante</option>
+                </select>
+            </div>
+
+            <!-- Mensaje -->
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            </div>
+
+            <!-- Sexo -->
+    <fieldset class="form-group">
+        <legend>Sexo:</legend>
+        <div class="option-group">
+            <input type="radio" id="hombre" name="sexo" value="hombre" required>
+            <label for="hombre">Hombre</label>
+            <input type="radio" id="mujer" name="sexo" value="mujer">
+            <label for="mujer">Mujer</label>
+            <input type="radio" id="trans_con" name="sexo" value="trans_con">
+            <label for="trans_con">Trans con</label>
+            <input type="radio" id="trans_sin" name="sexo" value="trans_sin">
+            <label for="trans_sin">Trans sin</label>
+        </div>
+    </fieldset>
+
+<!-- Medio de transporte -->
+    <fieldset class="form-group">
+        <legend>Medio de transporte:</legend>
+        <div class="option-group">
+            <input type="checkbox" id="andando" name="transporte[]" value="andando">
+            <label for="andando">Andando</label>
+            <input type="checkbox" id="coche" name="transporte[]" value="coche">
+            <label for="coche">Coche</label>
+            <input type="checkbox" id="transporte_publico" name="transporte[]" value="transporte_publico">
+            <label for="transporte_publico">Transporte público</label>
+            <input type="checkbox" id="bicicleta" name="transporte[]" value="bicicleta">
+            <label for="bicicleta">Bicicleta</label>
+            <input type="checkbox" id="patinete" name="transporte[]" value="patinete">
+            <label for="patinete">Patinete eléctrico</label>
+            <input type="checkbox" id="moto" name="transporte[]" value="moto">
+            <label for="moto">Moto</label>
+            <input type="checkbox" id="caballo" name="transporte[]" value="caballo">
+            <label for="caballo">Caballo</label>
+        </div>
+    </fieldset>
+
+          <!-- Aceptar cookies y política -->
+    <div class="form-group checkbox-group">
+        <input type="checkbox" id="cookies" name="cookies" required>
+        <label for="cookies">Aceptar cookies</label>
+    </div>
+    <div class="form-group checkbox-group">
+        <input type="checkbox" id="privacidad" name="privacidad" required>
+        <label for="privacidad">Aceptar política de privacidad</label>
+    </div>
+
+            <!-- Botones -->
+        <form>     
+            <div class="form-group buttons">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
+    <script src="formu.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+.form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #0c0c0c;
+    border-radius: 5px;
+    background-color: #a6ff8b;
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+    border: 1px solid green;
+    background-color: aquamarine;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+}
+
+/* Estilos para fieldsets */
+fieldset.form-group {
+    margin-bottom: 15px;
+}
+
+fieldset legend {
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+fieldset .option-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+fieldset .option-group label {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+fieldset .option-group input[type="radio"],
+fieldset .option-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+/* Nuevos estilos para los checkboxes de cookies y privacidad */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.checkbox-group label {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    padding: 2px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
