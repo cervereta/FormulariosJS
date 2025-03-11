@@ -4,14 +4,14 @@
     padding: 20px;
     border: 2px solid #0c0c0c;
     border-radius: 5px;
-    background-color: #a6ff8b;
+    background-color: #d4f2cb;
     
 }
 
 .form-group {
     margin-bottom: 15px;
     border: 1px solid green;
-    background-color: aquamarine;
+    background-color: #d4f8ec;
     
 }
 
@@ -80,10 +80,73 @@ fieldset .option-group input[type="checkbox"] {
 .form-group {
     margin-bottom: 15px;
     padding: 2px;
+    
 }
 
+.error {
+    color: red;
+    font-size: 0.8em;
+    display: block; /* Para que aparezca debajo del input */
+}
+
+.input-error {
+    border: 2px solid red;
+    background-color: #ffe6e6; /* Fondo rojo claro para destacar */
+}
+
+/* Contenedor de los botones */
 .buttons {
     display: flex;
-    gap: 10px;
+    gap: 25px; /* Aumentamos un poco el espacio entre botones */
     justify-content: center;
+    margin-top: 20px; /* Añadimos un margen superior para separarlo del resto */
+}
+
+/* Estilos para los botones */
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px; /* Más espacio interno */
+    font-size: 16px; /* Tamaño de fuente más legible */
+    font-weight: bold; /* Texto en negrita */
+    border: none; /* Quitamos el borde por defecto */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano al pasar por encima */
+    transition: all 0.3s ease; /* Transición suave para efectos */
+    width: 120px; /* Ancho fijo para consistencia */
+}
+
+/* Botón Enviar */
+input[type="submit"] {
+    background-color: #4CAF50; /* Verde agradable */
+    color: white; /* Texto blanco */
+}
+
+/* Botón Reset */
+input[type="reset"] {
+    background-color: #f44336; /* Rojo suave */
+    color: white; /* Texto blanco */
+}
+
+/* Efectos al pasar el ratón */
+input[type="submit"]:hover {
+    background-color: #45a049; /* Verde más oscuro */
+    transform: translateY(-2px); /* Ligero levantamiento */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+input[type="reset"]:hover {
+    background-color: #da190b; /* Rojo más oscuro */
+    transform: translateY(-2px); /* Ligero levantamiento */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+/* Efecto al hacer clic */
+input[type="submit"]:active {
+    transform: translateY(0); /* Vuelve a su posición */
+    box-shadow: none; /* Quita la sombra */
+}
+
+input[type="reset"]:active {
+    transform: translateY(0); /* Vuelve a su posición */
+    box-shadow: none; /* Quita la sombra */
 }
