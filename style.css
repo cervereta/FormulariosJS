@@ -152,3 +152,41 @@ input[type="reset"]:active {
     transform: translateY(0); /* Vuelve a su posición */
     box-shadow: none; /* Quita la sombra */
 }
+
+/* Contenedor del password y el ojo */
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    width: 24px; /* Ajusta según el tamaño de tus imágenes */
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Barra de fuerza de la contraseña */
+.strength-bar {
+    width: 100%;
+    height: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+    background-color: #ddd; /* Color base gris */
+    transition: background-color 0.3s ease;
+}
+
+/* Clases para los colores de la barra */
+.strength-weak {
+    background-color: #ff4d4d; /* Rojo */
+}
+
+.strength-medium {
+    background-color: #ffcc00; /* Amarillo */
+}
+
+.strength-strong {
+    background-color: #4CAF50; /* Verde */
+}
