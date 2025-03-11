@@ -20,6 +20,8 @@ h2 {
 
 .logo {
     margin: 10px ;/* Ajusta estilos adicionales de .logo aquí si es necesario */
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .form-group {
