@@ -100,6 +100,8 @@ fieldset .option-group input[type="checkbox"] {
     gap: 25px; /* Aumentamos un poco el espacio entre botones */
     justify-content: center;
     margin-top: 20px; /* Añadimos un margen superior para separarlo del resto */
+    border: none;
+    background-color: #d4f2cb;
 }
 
 /* Estilos para los botones */
